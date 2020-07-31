@@ -17,7 +17,3 @@ Aplicação web para controle de dinheiro para jogos de tabuleiro usando qr-code
 [Jogador 5](https://igorfs10.github.io/qr_money_for_games/jogadores/5.jpg)
 
 [Jogador 6](https://igorfs10.github.io/qr_money_for_games/jogadores/6.jpg)
-
-[Jogador 7](https://igorfs10.github.io/qr_money_for_games/jogadores/7.jpg)
-
-[Jogador 8](https://igorfs10.github.io/qr_money_for_games/jogadores/8.jpg)
