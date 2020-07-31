@@ -1,6 +1,9 @@
 let quantidade_jogadores = 6;
 let dinheiro_jogadores = [ 0, 0, 0, 0, 0, 0 ];
 
+let jogador_paga = null;
+let jogador_recebe = null;
+
 console.log(quantidade_jogadores);
 console.log(dinheiro_jogadores);
 

@@ -1,104 +1,109 @@
 <!doctype html>
 <html lang=”pt-br”>
+  <head>
+    <title>QR Money For Games</title>
+    <meta http-equiv="Content-Language" content="pt-br">
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" href="favicon.png">
+    <link rel="stylesheet" href="bulma.min.css">
+  </head>
 
-<head>
-  <title>QR Money For Games</title>
-  <meta http-equiv="Content-Language" content="pt-br">
-  <meta content="text/html;charset=utf-8" http-equiv="Content-Type" />
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="icon" href="favicon.png">
-  <link rel="stylesheet" href="bulma.min.css">
-</head>
-
-<body>
-  <div class="container px-4 py-4">
-    <div class="content has-text-centered mb-5">
-      <h2 class="title">QR Money For Games</p>
-    </div>
-
-    <div class="columns">
-      <div class="column">
-        <button class="button is-primary is-medium is-fullwidth">Novo</button>
+  <body>
+    <div class="container px-4 py-4">
+      <div class="content has-text-centered mb-5">
+        <h2 class="title">QR Money For Games</p>
       </div>
 
-      <div class="column">
-        <button class="button is-success is-medium is-fullwidth">Carregar</button>
-      </div>
-    </div>
-
-    <div class="content">
-      <button class="button is-success is-medium is-outlined is-fullwidth is-static">
-        <i class="fas fa-save"></i>
-
-        &nbsp; Jogo Salvo
-      </button>
-    </div>
-  </div>
-
-  <div class="container px-4 py-4" id="dados">
-    <div class="columns has-text-centered">
-      <div class="column is-2">
-        <div class="box">
-          <p><strong>Jogador 1</strong></p>
-
-          <p><i class="fas fa-dollar-sign"></i>&nbsp;<span>9999</span>,00</p>
-        </div>
-      </div>
-
-      <div class="column is-2">
-        <div class="box">
-          <p><strong>Jogador 2</strong></p>
-
-          <p><i class="fas fa-dollar-sign"></i>&nbsp;<span>9999</span>,00</p>
-        </div>
-      </div>
-
-      <div class="column is-2">
-        <div class="box">
-          <p><strong>Jogador 3</strong></p>
-
-          <p><i class="fas fa-dollar-sign"></i>&nbsp;<span>9999</span>,00</p>
-        </div>
-      </div>
-
-      <div class="column is-2">
-        <div class="box">
-          <p><strong>Jogador 4</strong></p>
-
-          <p><i class="fas fa-dollar-sign"></i>&nbsp;<span>9999</span>,00</p>
-        </div>
-      </div>
-
-      <div class="column is-2">
-        <div class="box">
-          <p><strong>Jogador 5</strong></p>
-
-          <p><i class="fas fa-dollar-sign"></i>&nbsp;<span>9999</span>,00</p>
-        </div>
-      </div>
-
-      <div class="column is-2">
-        <div class="box">
-          <p><strong>Jogador 6</strong></p>
-
-          <p><i class="fas fa-dollar-sign"></i>&nbsp;<span>9999</span>,00</p>
+      <div class="columns">
+        <div class="column is-12">
+          <button class="button is-primary is-medium is-fullwidth">Novo Jogo</button>
         </div>
       </div>
     </div>
-  </div>
 
-  <div class="container px-4 py-4">
-  </div>
+    <div class="container px-4 py-4" id="dados">
+      <div class="columns has-text-centered">
+        <div class="column is-2">
+          <div class="box">
+            <p><strong>Jogador 1</strong></p>
 
-  <div class="container px-4 py-4">
-    <video id="cam"></video>
-  </div>
-  
-  <script src="all.min.js"></script>
-  <script src="qr-scanner.umd.min.js"></script>
-  <script src="qr-scanner-worker.min.js"></script>
-  <script src="main.js"></script>
+            <p><i class="far fa-money-bill-alt"></i>&nbsp;<span>9999</span>,00</p>
+          </div>
+        </div>
 
-</body>
+        <div class="column is-2">
+          <div class="box">
+            <p><strong>Jogador 2</strong></p>
 
+            <p><i class="far fa-money-bill-alt"></i>&nbsp;<span>9999</span>,00</p>
+          </div>
+        </div>
+
+        <div class="column is-2">
+          <div class="box">
+            <p><strong>Jogador 3</strong></p>
+
+            <p><i class="far fa-money-bill-alt"></i>&nbsp;<span>9999</span>,00</p>
+          </div>
+        </div>
+
+        <div class="column is-2">
+          <div class="box">
+            <p><strong>Jogador 4</strong></p>
+
+            <p><i class="far fa-money-bill-alt"></i>&nbsp;<span>9999</span>,00</p>
+          </div>
+        </div>
+
+        <div class="column is-2">
+          <div class="box">
+            <p><strong>Jogador 5</strong></p>
+
+            <p><i class="far fa-money-bill-alt"></i>&nbsp;<span>9999</span>,00</p>
+          </div>
+        </div>
+
+        <div class="column is-2">
+          <div class="box">
+            <p><strong>Jogador 6</strong></p>
+
+            <p><i class="far fa-money-bill-alt"></i>&nbsp;<span>9999</span>,00</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="columns">
+        <div class="column is-4">
+          <button class="button is-success is-medium is-fullwidth"><i class="fas fa-long-arrow-alt-up"></i>&nbsp;<i class="far fa-money-bill-alt"></i>&nbsp; Receber</button>
+        </div>
+        <div class="column is-4">
+          <button class="button is-danger is-medium is-fullwidth"><i class="fas fa-long-arrow-alt-down"></i>&nbsp;<i class="far fa-money-bill-alt"></i>&nbsp; Pagar</button>
+        </div>
+        <div class="column is-4">
+          <button class="button is-info is-medium is-fullwidth"><i class="fas fa-arrows-alt-h"></i>&nbsp;<i class="far fa-money-bill-alt"></i>&nbsp; Transferir</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="container px-4 py-4" id="pagamento">
+      <div class="columns is-vcentered">
+        <div class="column is-4">
+          <video id="cam"></video>
+        </div>
+        <div class="column is-4 has-text-centered">
+          <p class="is-size-1"><i class="fas fa-university"></i>&nbsp;Banco</p>
+        </div>
+        <div class="column is-4 has-text-centered">
+          <p class="is-size-1"><i class="fas fa-university"></i>&nbsp;Banco</p>
+        </div>
+      </div>
+    </div>
+    
+    <script src="all.min.js"></script>
+    <script src="qr-scanner.umd.min.js"></script>
+    <script src="qr-scanner-worker.min.js"></script>
+    <script src="main.js"></script>
+
+  </body>
 </html>
