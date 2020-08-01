@@ -11,12 +11,9 @@ class Jogador {
 function novo_jogo(){
     if(confirm("Isso apagará o jogo atual. Deseja iniciar um jogo novo?")){
         let quantidade_jogadores = escolher_quantidade_jogadores();
-        console.log(quantidade_jogadores);
         let quantidade_dinheiro = escolher_quantidade_dinheiro();
-        console.log(quantidade_dinheiro);
         for(let i = 0;i < quantidade_jogadores; ++i){
             let nome = prompt(`Digite o nome do jogador ${i + 1}:`);
-            console.log(escanear_qr());
         }
     }
 }
@@ -48,12 +45,12 @@ function escanear_qr(){
         QR_SCANNER.stop();
         return resultado;
     });
+    QR_SCANNER.start();
 }
 
 function mostrar_dados(jogadores){
     let html = "";
     for(jogador of jogadores){
-        console.log(jogador);
         html += `<div class="column is-2">` +
                     `<div class="box">` +
                         `<p><strong>${jogador.nome}</strong></p>` + 
@@ -80,11 +77,7 @@ let j2 = new Jogador("2", "Link", 2000);
 
 jogadores.push(j);
 jogadores.push(j2);
-console.log(jogadores);
 
 const cam = document.getElementById("cam");
-
-const QR_SCANNER = new QrScanner(cam, result => console.log('decoded qr code:', result));
-// QR_SCANNER.start();
 
 mostrar_dados(jogadores);
