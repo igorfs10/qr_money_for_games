@@ -17,62 +17,17 @@
 
       <div class="columns">
         <div class="column is-12">
-          <button class="button is-primary is-medium is-fullwidth">Novo Jogo</button>
+          <button class="button is-primary is-medium is-fullwidth" onclick="novo_jogo()">Novo Jogo</button>
         </div>
       </div>
     </div>
 
-    <div class="container px-4 py-4" id="dados">
-      <div class="columns has-text-centered">
-        <div class="column is-2">
-          <div class="box">
-            <p><strong>Jogador 1</strong></p>
-
-            <p><i class="far fa-money-bill-alt"></i>&nbsp;<span>9999</span>,00</p>
-          </div>
-        </div>
-
-        <div class="column is-2">
-          <div class="box">
-            <p><strong>Jogador 2</strong></p>
-
-            <p><i class="far fa-money-bill-alt"></i>&nbsp;<span>9999</span>,00</p>
-          </div>
-        </div>
-
-        <div class="column is-2">
-          <div class="box">
-            <p><strong>Jogador 3</strong></p>
-
-            <p><i class="far fa-money-bill-alt"></i>&nbsp;<span>9999</span>,00</p>
-          </div>
-        </div>
-
-        <div class="column is-2">
-          <div class="box">
-            <p><strong>Jogador 4</strong></p>
-
-            <p><i class="far fa-money-bill-alt"></i>&nbsp;<span>9999</span>,00</p>
-          </div>
-        </div>
-
-        <div class="column is-2">
-          <div class="box">
-            <p><strong>Jogador 5</strong></p>
-
-            <p><i class="far fa-money-bill-alt"></i>&nbsp;<span>9999</span>,00</p>
-          </div>
-        </div>
-
-        <div class="column is-2">
-          <div class="box">
-            <p><strong>Jogador 6</strong></p>
-
-            <p><i class="far fa-money-bill-alt"></i>&nbsp;<span>9999</span>,00</p>
-          </div>
-        </div>
+    <div class="container px-4 py-4" id="dados_div">
+      <div class="columns has-text-centered" id="colunas_dados_div">
       </div>
+    </div>
 
+    <div class="container px-4 py-4" id="botoes_div">
       <div class="columns">
         <div class="column is-4">
           <button class="button is-success is-medium is-fullwidth"><i class="fas fa-long-arrow-alt-up"></i>&nbsp;<i class="far fa-money-bill-alt"></i>&nbsp; Receber</button>
@@ -86,7 +41,7 @@
       </div>
     </div>
 
-    <div class="container px-4 py-4" id="pagamento">
+    <div class="container px-4 py-4" id="pagamento_div">
       <div class="columns is-vcentered">
         <div class="column is-4">
           <video id="cam"></video>
